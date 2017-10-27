@@ -36,6 +36,7 @@ namespace WebApplication
 
 
         [HttpGet("{accountName}")]
+        [ProducesResponseType(typeof(double), 200)]
         public async Task<IActionResult> Get(string accountName)
         {
             var bank = _factory.GetGrain<IBankAccount>(accountName);

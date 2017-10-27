@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Orleans;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace WebApplication
 {
@@ -22,6 +23,7 @@ namespace WebApplication
                 client.Connect().Wait();
                 return client;
             });
+
             services.AddMvc();
         }
 
@@ -33,6 +35,7 @@ namespace WebApplication
             {
                 app.UseDeveloperExceptionPage();
             }
+
 
             app.ApplicationServices.GetService<IGrainFactory>();
             app.UseMvcWithDefaultRoute();

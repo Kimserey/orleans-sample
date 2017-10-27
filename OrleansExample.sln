@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "Grains\Grains.csproj", "{08666E35-0075-4DB3-95BA-22FBA8C8BA7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{3558CC92-81F4-4D66-BD83-A3F8E0AC396B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{3558CC92-81F4-4D66-BD83-A3F8E0AC396B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

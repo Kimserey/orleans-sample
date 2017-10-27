@@ -54,9 +54,6 @@
     <Reference Include="Orleans, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Orleans.Core.1.5.1\lib\net461\Orleans.dll</HintPath>
     </Reference>
-    <Reference Include="OrleansCodeGenerator, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Orleans.OrleansCodeGenerator.1.5.1\lib\net461\OrleansCodeGenerator.dll</HintPath>
-    </Reference>
     <Reference Include="OrleansRuntime, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Orleans.OrleansRuntime.1.5.1\lib\net461\OrleansRuntime.dll</HintPath>
     </Reference>
