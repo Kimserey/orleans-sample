@@ -1,4 +1,5 @@
 ﻿using Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Orleans;
 using System;
@@ -43,5 +44,17 @@ namespace WebApplication
             var balance = await bank.GetBalance();
             return Ok(balance);
         }
+
+        [HttpPost("Upload")]
+        public IActionResult Upload([FromForm]IEnumerable<IFormFile> files) => Ok();
+
+        public class Property
+        {
+            public string Type { get; set; }
+            public string Value { get; set; }
+        }
+
+        [HttpPost("Change")]
+        public IActionResult UpdateAccountProperty([FromBody]Property[] props) => Ok();
     }
 }
