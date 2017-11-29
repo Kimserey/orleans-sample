@@ -15,7 +15,7 @@ namespace WebApplication
                         value = "string"
                     },
                     new {
-                        type = "value",
+                        type = "age",
                         value = "number"
                     }
                 };
